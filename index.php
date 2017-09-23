@@ -1,0 +1,1 @@
+<?php header( 'Locatiogin: /index.html' ) ;  ?>
