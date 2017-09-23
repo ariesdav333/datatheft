@@ -1,0 +1,19 @@
+{
+  "name": "d3virtual",
+  "version": "1.0.0",
+  "description": "Theft Data",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ariesdav333/datatheft.git"
+  },
+  "author": "David Williams",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ariesdav333/datatheft/issues"
+  },
+  "homepage": "https://github.com/ariesdav333/datatheft#readme"
+}
