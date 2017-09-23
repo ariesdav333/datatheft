@@ -11,12 +11,19 @@ DBS_NAME = 'databreaches'
 COLLECTION_NAME = 'intrusion'
 
 
-@app.route("/")
+@app.route('/')
+def home():
+    return render_template("home.html")
+
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+@app.route('/index')
 def index():
-    """
-    A Flask view to serve the main dashboard page.
-    """
-    return render_template("index.html")
+    return render_template('index.html')
+
+
 
 
 @app.route("/datab/intrusions")
