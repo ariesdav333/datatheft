@@ -1,0 +1,17 @@
+{
+  "name": "Data Theft",
+  "description": "Theft Data",
+  "main": "index.js",
+  "authors": [
+    "David Williams"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/ariesdav333/datatheft",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
