@@ -16,15 +16,15 @@ function makeGraphs(error, projectsJson) {
         str = String(d["Records Leaked"]);
         d["Records Leaked"] = parseInt(str.replace(",", ""));
 
-        /*if (orgArray.indexOf(d["Organisation"].toLowerCase()) === -1) {
+        if (orgArray.indexOf(d["Organisation"].toLowerCase()) === -1) {
         orgArray.push(d["Organisation"]);
-        console.log(d["Organisation"]);
-    } */
+
+    }
 
 
     });
 
-
+    orgArray.sort();
 
     //Create a Crossfilter instance
     var ndx = crossfilter(databreaches);
@@ -50,7 +50,9 @@ function makeGraphs(error, projectsJson) {
     //Calculate metrics
     var recordsByYear = yearDim.group().reduceSum(dc.pluck('Records Leaked'));
 
-    var recordsByOrg = OrgDim.group().reduceSum(dc.pluck('Records Leaked'));
+    var recordsByOrg = OrgDim.group().reduceSum(function (d) {
+    console.log(d["Records Leaked"]);
+    return d["Records Leaked"]; });
 
     // // JUST ADDED TJHIS FOR SENSITIVITY
     var SensitivityByYear = RecordsDim.group();
@@ -67,7 +69,7 @@ function makeGraphs(error, projectsJson) {
 
     // FOR DATA SENSITIVITY - REFERENCED THE ID OF PIE CHART IN INDEX.HTML
     var pieChart = dc.pieChart("#pie-chart");
-
+    var recordsChart = dc.lineChart("#line-chart");
 
 
 
@@ -96,18 +98,17 @@ function makeGraphs(error, projectsJson) {
         .radius(radius)
 
 
-   /* recordsChart
+   recordsChart
         .width(800)
         .height(200)
-        //.margins({top: 10, right: 40, bottom: 100, left: 40})
         .dimension(OrgDim)
         .group(recordsByOrg)
         .x(d3.scale.ordinal().domain(orgArray))
         .xUnits(dc.units.ordinal)
-        .elasticY(true)
+        //.elasticY(true)
         .xAxisLabel("Organisation Display - Of Records Leaked")
         .yAxis().ticks(4);
- */
+
 
    dc.renderAll();
 
