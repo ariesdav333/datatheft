@@ -1,13 +1,12 @@
 body {
-   /*background: url("../media/about_hack.png");*/
-   /*opacity: 0.1; */
-   /*background-size: cover;  /*cover the whole page*/
-   /*margin: 0;*/
-   /*padding: 0; */
-   /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
-   /*color: #444;*/
+   background: url("../media/about_hack.png");
+   opacity: 0.8;
+   background-size: cover;
+   margin: 0;
+   padding: 0;
+   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+   color: #444;
    }
-
 
 div {
     color: white;
@@ -15,10 +14,10 @@ div {
 
 /* Create dark grey header with a white logo */
 header {
-   background-color: #2B2B3E; /*2B2B2B*/
+   background-color: #003300; /*2B2B2B*/
    height: 35px;
    width: 100%;
-   opacity: .6;
+   opacity: .2.5;
    margin-bottom: 10px;
 }
 header h1.logo {
@@ -29,7 +28,7 @@ header h1.logo {
    float: left;
 }
 header h1.logo:hover {
-   color: #eee;
+   color: #fff;
    text-decoration: none;
    color: #eee;
 }
@@ -39,7 +38,7 @@ header h1.logo:hover {
    margin: 0 auto;
 }
 div.jumbo {
-   padding: 10px 0 30px 0;
+   padding:5px 0 10px 0;
    background-color: #eeeeff;
    -webkit-border-radius: 6px;
    -moz-border-radius: 6px;
@@ -73,7 +72,7 @@ h3 {
    margin-left: 35px;
 }
 .menu li a {
-   color: #888;
+   color: #8888;
    text-decoration: blue;
 }
 
@@ -83,5 +82,10 @@ a{
 
 .container{
     background-color = blue;
+}
+
+
+a:hover{
+    color: black;
 }
 
