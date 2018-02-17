@@ -17,7 +17,7 @@ header {
    background-color: #003300; /*2B2B2B*/
    height: 35px;
    width: 100%;
-   opacity: .2.5;
+   opacity:2.1;
    margin-bottom: 10px;
 }
 header h1.logo {
@@ -69,23 +69,27 @@ h3 {
    display: inline;
 }
 .menu li + li {
-   margin-left: 35px;
+   margin-center: 35px;
 }
-.menu li a {
-   color: #8888;
-   text-decoration: blue;
+.menu li a:hover {
+   color: blue;
+
 }
 
 a{
-    background-color= red;
+    text-decoration-color:none;
 }
 
 .container{
-    background-color = blue;
+    
 }
 
 
 a:hover{
-    color: black;
+    color: blue;
 }
 
+
+.page-header{
+    text-align: center;
+}
