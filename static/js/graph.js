@@ -87,9 +87,9 @@ function makeGraphs(error, projectsJson) {
 
     // FOR DATA SENSITIVITY  PIE CHART
     pieChart
-        var width = 360;
-        var height = 360;
-        var radius = Math.min(width, height) / 2;
+        var width = 360;   // set the width 
+        var height = 360;  // set the height 
+        var radius = Math.min(width, height) / 2;    // all the way around and divide width and height by 2
 
         pieChart.dimension(RecordsDim)
         .group(SensitivityByYear)
@@ -107,7 +107,7 @@ function makeGraphs(error, projectsJson) {
         .xUnits(dc.units.ordinal)
         //.elasticY(true)
         .xAxisLabel("Organisation Display - Of Records Leaked")
-        .yAxis().ticks(4);
+        .yAxis().ticks(4);   // display the values on the y axis from bottom to top 
 
 
    dc.renderAll();

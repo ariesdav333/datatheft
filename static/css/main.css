@@ -62,11 +62,16 @@ h3 {
 * Display navigation links inline
 */
 .menu {
-   float: left;
+   
    margin-top: 8px;
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+
 }
 .menu li {
    display: inline;
+ 
 }
 .menu li + li {
    margin-center: 35px;
@@ -80,9 +85,9 @@ a{
     text-decoration-color:none;
 }
 
-.container{
+<!-- .container{
     
-}
+} -->
 
 
 a:hover{
@@ -91,5 +96,5 @@ a:hover{
 
 
 .page-header{
-    text-align: center;
+    
 }
