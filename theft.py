@@ -11,6 +11,10 @@ DBS_NAME = 'databreaches'
 COLLECTION_NAME = 'intrusion'
 
 
+@app.route('/index')
+def index():
+    return render_template('index.html')
+
 @app.route('/')
 def home():
     return render_template("home.html")
@@ -19,9 +23,11 @@ def home():
 def about():
     return render_template('about.html')
 
-@app.route('/index')
-def index():
-    return render_template('index.html')
+@app.route('/security')
+def security():
+    return render_template('security.html')
+
+
 
 
 
