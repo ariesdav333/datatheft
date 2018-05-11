@@ -6,12 +6,12 @@ h4 {
 
 
 body {
-   background: url("../media/usbtheft.png");
    opacity: 0.9;
    background-size: cover;
    margin: 0;
    padding: 0;
-   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+   font-family: 'Open Sans', sans-serif;
+    
    color: #66;
    }
 
@@ -108,3 +108,4 @@ a:hover{
 h4-style{
     color:#4F84EE;
 }
+
