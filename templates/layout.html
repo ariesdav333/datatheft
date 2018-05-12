@@ -2,8 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Welcome to the Information  Data Theft</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
@@ -21,7 +24,7 @@
 
 
 <!-- Brand and toggle get grouped for better mobile display -->
-  <nav class="navbar navbar-inverse navbar-fixed-top">
+  <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
      
         <!-- <button type="button" class="navbar-toggle" data-toggle="collapse"
@@ -40,10 +43,10 @@
      
       <div class="collapse navbar-collapse" id="MyNavbar">
         <ul class="nav navbar-nav navbar-center">
-          <a href="{{ url_for('home') }}"><b> Home </b></a>
-         <a href="{{ url_for('about') }}"><b > Data Theft </b></a>
-         <a href="{{ url_for('index') }}"><b> Data Theft in Real-Time </b></a> 
-           <a href="{{ url_for('security') }}"><b> External links on Security </b></a>
+          <a href="{{ url_for('home') }}"> Home </a>&nbsp;
+          <a href="{{ url_for('about') }}"> Data Theft </a>&nbsp;
+          <a href="{{ url_for('index') }}"> Data Theft in Real-Time </a>&nbsp;
+          <a href="{{ url_for('security') }}"> External links on Security </a>&nbsp;
         </ul>
       </div>
     </div>

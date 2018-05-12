@@ -1,12 +1,21 @@
 
 
-.hacking_img{
-   display: inline-block; 
+
+.navbar-default {
+    background-color: #E7F8E9;
+    border-color: #E7E7E7;
+    background-color: #E7E7E9;
+    color: #555;
 }
 
-a.hacking:hover{
-   background: #C93;
+
+
+
+.hacking_img{
+ display: inline-block; 
 }
+
+
 .container {
         width: 100%;
 }
@@ -15,11 +24,10 @@ h4 {
     color: #050505;
 }
 
-
 body {
    margin: 0;
    padding: 0;
-   font-family: 'Open Sans', sans-serif;
+   font-family: 'Manuale', serif;
    }
 
 
@@ -73,11 +81,13 @@ h3 {
    margin-top: 30px;
    text-align: center;
    letter-spacing: -1px;
-   color: #999;
+   color: #888;
 }
 
 
 /* Navigation Links */
+
+
 
 .menu {
    float: center;
@@ -90,22 +100,16 @@ h3 {
    margin-left: 65px;
 }
 .menu li a {
-   color: #999;
-   text-decoration: none;
+   
 }
 
-a{
-    text-decoration-color:none;
-}
+
 
 <!-- .container{
     
 } -->
 
 
-a:hover{
-    color: 457889;
-}
 
 
 .page-header{
