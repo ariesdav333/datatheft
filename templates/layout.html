@@ -6,30 +6,26 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+
 </head>
 
 <body>
 <header>
      <div class="container">
          <h1><b><legend>Data Breaches</legend></b></h1>
-   <!-- <nav>
-          <strong>
-     <ul class="menu">
-         <li><a href="{{ url_for('home') }}"><b>Home</b></a></li>
-         <li><a href="{{ url_for('about') }}"><b>More about Data Theft</b></a></li>
-         <li><a href="{{ url_for('index') }}"><b>Data Theft Visual Charts</b></a> </li>
-         <li><a href="{{ url_for('about') }}"><b>External links on Security</b></a></li>
-     </ul>
-  </strong>
-         </nav> -->
+   
+
+
 
 
 <!-- Brand and toggle get grouped for better mobile display -->
   <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse"
-         data-target="#MyNavbar">
+     
+        <!-- <button type="button" class="navbar-toggle" data-toggle="collapse"
+         data-target="#MyNavbar"> -->
        
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -37,6 +33,9 @@
         </button>
         <a class="navbar-brand" href="#"></a>
       </div>
+
+
+
   
      
       <div class="collapse navbar-collapse" id="MyNavbar">
@@ -56,6 +55,11 @@
      {% block content %}
      {% endblock %}
    </div>
+
+   
+
+
+
 
 </body>
 </html>
