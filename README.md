@@ -15,20 +15,15 @@ This will just display data of breaches that happened from 2013 to 2016 and show
  
 ## Tech Used
 ### Some tech used includes:
-- Will use Python(Flask) a micro framwork as the structure of the website
-
+- Will use Python(Flask) a micro framwork as the structure of the website with basic links. It will use templates to create a
+seperation of concerns for each page as best practice
 -Styling with  CSS will be used for the web pages
-
-- It will use a standard HTML layout 
-
-- Data will be used from a .csv file and the database used to extract the data will be MongoDB and D3.js & Crossfilter to display the data in a 
-chart format 
+- Data will be used from a .csv file and the database used to extract the data will be MongoDB. D3.js & Crossfilter to display the data in a various charting formats to visualise the data in realtime
  
 ## Deployment
-This will be deployed to my local Github Repo and also display in Heroku
+This will be deployed to my local Github Repo and aalso pushed to a hosting site called "Heroku"
 
 
 
 ## Developer
-
-This is being designed and developed by <b> David Williams </b> 2017
+This is being designed and developed by <b> David Williams </b> 2018

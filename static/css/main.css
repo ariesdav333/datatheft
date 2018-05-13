@@ -1,5 +1,7 @@
 
-
+svg {
+  background-color:#ddd;
+}
 
 .navbar-default {
     background-color: #E7F8E9;
@@ -8,12 +10,19 @@
     color: #555;
 }
 
+body {
+  background: url(hack_me.png.svg) no-repeat top left;
+  background-size: contain;
+}
+
 
 
 
 .hacking_img{
- display: inline-block; 
+   display: inline-block; 
+
 }
+
 
 
 .container {
