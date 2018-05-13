@@ -23,6 +23,10 @@ seperation of concerns for each page as best practice
 ## Deployment
 This will be deployed to my local Github Repo and aalso pushed to a hosting site called "Heroku"
 
+##Contributing
+For the developer to get the code up and running please follow the steps below:
+
+
 
 
 ## Developer
