@@ -8,7 +8,7 @@ div.dc-chart {
 }
 
 .dc-chart rect.bar:hover {
-    fill-opacity: .5;
+    fill-opacity: .9;
 }
 
 .dc-chart rect.stack1 {

@@ -11,6 +11,7 @@ DBS_NAME = 'databreaches'
 COLLECTION_NAME = 'intrusion'
 
 
+### set the routes for each webpage ###
 @app.route('/index')
 def index():
     return render_template('index.html')
@@ -31,7 +32,7 @@ def security():
 
 
 
-
+### set the route of the csv file ###
 @app.route("/datab/intrusions")
 def breach_database():
     """

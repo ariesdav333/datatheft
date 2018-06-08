@@ -2,6 +2,8 @@
 <html xmlns="http://www.w3.org/1999/html">
 
 
+
+
 <head>
   <title>Data Theft Dashboard</title>
   <link rel="stylesheet" href="{{ url_for ('static', filename='lib/css/bootstrap.min.css')}}">
@@ -14,13 +16,17 @@
 <body class="application">
 
 
-  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+ <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a class="navbar-brand" href="./">Cyber Theft Dashboard</a>
+        <a class="navbar-brand" href="./">Cyber Theft Dashboard  - Visualising the Data</a>
       </div>
     </div>
-  </div>
+  </div> 
+
+  <div>
+  <a href="{{ url_for('home') }}"><b>Home</b> </a>
+</div>
 
 
   <div  id="outer" class="container-fluid">
@@ -48,7 +54,7 @@
       <div class="col-sm-12">
         <div class="chart-wrapper">
           <div class="chart-title">
-          <b> <u> Data Sensitivity </u> </b>
+          <b> <u> Data Sensitivity </u> </b>   <b> Select areas of the <em>pie-chart</em> below to display the other charts data</b>
           </div>
           <div class="chart-stage">
             <div id="pie-chart"></div>
@@ -77,6 +83,9 @@
   <script src="{{ url_for ('static', filename='lib/js/queue.js')}}"></script>
   <script src="{{ url_for ('static', filename='lib/js/keen.min.js')}}"></script>
   <script src="{{ url_for ('static', filename='js/graph.js')}}"></script>
+
+
+
 </body>
 
 </html>
